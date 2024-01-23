@@ -1,5 +1,16 @@
 // funcio nativa para mostrar un mensaje pop pup
-alert('Hola Mundo');
+// alert('Hola Mundo');
 
 // Funcion o metodo SPermite perdirle o preguntar informacion al usuario
 let numeroUsuario = prompt("Me indicas un numero porfavor: ");
+let numeroSecreto = 6;
+
+// Funcion que impreime en consola el valor de variables f12
+// sin las comillas la consola entiende que tiene que extraer el valor de la variable y mostrarlo
+console.log(numeroUsuario);
+
+if (numeroUsuario == numeroSecreto) {
+  alert("Acertaste el numero");
+} else {
+  
+}
