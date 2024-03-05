@@ -24,10 +24,12 @@ console.log(numeroUsuario);
 // Realiza la comparacion
 if (numeroUsuario == numeroSecreto) {
   // Acertamos fue verdadera la condición
-  alert('Acertaste el número');
+  // alert('Acertaste el número');
+  alert(`Acertaste, el número es: ${numeroUsuario}`);
 }else{
   // La condición no se cumplió
-  alert('Lo siento, no acertaste el número');
+  // alert('Lo siento, no acertaste el número');
+  alert(`Lo siento, no acertaste el número: ${numeroUsuario}`);
 }
 
 // if (edad >= 18) {
