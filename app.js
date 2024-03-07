@@ -29,7 +29,12 @@ if (numeroUsuario == numeroSecreto) {
 }else{
   // La condición no se cumplió
   // alert('Lo siento, no acertaste el número');
-  alert(`Lo siento, no acertaste el número: ${numeroUsuario}`);
+  // alert(`Lo siento, no acertaste el número: ${numeroUsuario}`);
+  if (numeroUsuario > numeroSecreto) {
+    alert('El número secreto es menor');
+  }else{
+    alert('El número secreto es mayor');
+  }
 }
 
 // if (edad >= 18) {

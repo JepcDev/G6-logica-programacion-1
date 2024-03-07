@@ -26,7 +26,8 @@ if (numero > 0) {
     alert('El número es cero');
 }
 
-// 3. Crea un sistema de puntuación para un juego. Si la puntuación es mayor o igual a 100, muestra "¡Enhorabuena, has ganado!". En caso contrario, muestra "Inténtalo de nuevo para ganar."
+// 3. Crea un sistema de puntuación para un juego. Si la puntuación es mayor o igual a 100, muestra "
+// ¡Enhorabuena, has ganado!". En caso contrario, muestra "Inténtalo de nuevo para ganar."
 
   let puntuacion = 105;
 if (puntuacion >= 100) {
@@ -35,7 +36,8 @@ if (puntuacion >= 100) {
     console.log('Inténtalo de nuevo para ganar.');
 }
 
-// 4. Crea un mensaje que informe al usuario sobre el saldo de la cuenta, utilizando un template string para incluir el valor del saldo.
+// 4. Crea un mensaje que informe al usuario sobre el saldo de la cuenta,
+//  utilizando un template string para incluir el valor del saldo.
 
   let saldoCuenta = 500; // Ejemplo de saldo
 alert(`Tu saldo es de ${saldoCuenta}.`);
