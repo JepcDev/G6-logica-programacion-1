@@ -3,41 +3,45 @@
 alert("¡Bienvenida y bievenido a nuestro sitio web!");
 
 // Funcion o metodo SPermite perdirle o preguntar informacion al usuario
-let numeroUsuario = prompt("Me indicas un numero porfavor: ");
 let numeroSecreto = 6;
-// let nombre = "Luna";
-// let edad = 25;
-// let numeroDeVentas = 50;
-// let saldoDisponible = 100;
-// let mensajeDeError  = "¡Error! Completa todos los campos";
+let numeroUsuario = 0;
 
-// alert("¡Error! Completa todos los campos");
-// alert(mensajeDeError);
+while (numeroUsuario != numeroSecreto){
+  let numeroUsuario = prompt("Me indicas un numero entre 1 y 10 por favor: ");
+  // let nombre = "Luna";
+  // let edad = 25;
+  // let numeroDeVentas = 50;
+  // let saldoDisponible = 100;
+  // let mensajeDeError  = "¡Error! Completa todos los campos";
 
-// nombre = prompt("Por favor ingrese su nombre: ");
-// edad = prompt("Por favor ingrese su edad: ");
+  // alert("¡Error! Completa todos los campos");
+  // alert(mensajeDeError);
 
-// Funcion que impreime en consola el valor de variables f12
-// sin las comillas la consola entiende que tiene que extraer el valor de la variable y mostrarlo
-console.log(numeroUsuario);
+  // nombre = prompt("Por favor ingrese su nombre: ");
+  // edad = prompt("Por favor ingrese su edad: ");
 
-// Realiza la comparacion
-if (numeroUsuario == numeroSecreto) {
-  // Acertamos fue verdadera la condición
-  // alert('Acertaste el número');
-  alert(`Acertaste, el número es: ${numeroUsuario}`);
-}else{
-  // La condición no se cumplió
-  // alert('Lo siento, no acertaste el número');
-  // alert(`Lo siento, no acertaste el número: ${numeroUsuario}`);
-  if (numeroUsuario > numeroSecreto) {
-    alert('El número secreto es menor');
+  // Funcion que impreime en consola el valor de variables f12
+  // sin las comillas la consola entiende que tiene que extraer el valor de la variable y mostrarlo
+  console.log(numeroUsuario);
+
+  // Realiza la comparacion
+  if (numeroUsuario == numeroSecreto) {
+    // Acertamos fue verdadera la condición
+    // alert('Acertaste el número');
+    alert(`Acertaste, el número es: ${numeroUsuario}`);
   }else{
-    alert('El número secreto es mayor');
+    // La condición no se cumplió
+    // alert('Lo siento, no acertaste el número');
+    // alert(`Lo siento, no acertaste el número: ${numeroUsuario}`);
+    if (numeroUsuario > numeroSecreto) {
+      alert('El número secreto es menor');
+    }else{
+      alert('El número secreto es mayor');
+    }
   }
-}
 
-// if (edad >= 18) {
-//   alert("¡Puedes obtener tu licencia de conducir!");
-// } else {
-// }
+  // if (edad >= 18) {
+  //   alert("¡Puedes obtener tu licencia de conducir!");
+  // } else {
+  // }
+}
