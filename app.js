@@ -2,8 +2,8 @@
 // alert('Hola Mundo');
 alert("¡Bienvenida y bievenido a nuestro sitio web!");
 
-// Funcion o metodo SPermite perdirle o preguntar informacion al usuario
-let numeroSecreto = Math.floor(Math.random()*10)+1;
+let numeroMaximoPosible = 10;
+let numeroSecreto = Math.floor(Math.random()*numeroMaximoPosible)+1;
 let numeroUsuario = 0;
 let intentos = 1;
 // let palabraVeces = 'vez';
@@ -12,7 +12,8 @@ let maximoIntentos = 3;
 // console.log(numeroSecreto);
 
 while (numeroUsuario != numeroSecreto){
-  let numeroUsuario = parseInt( prompt("Me indicas un numero entre 1 y 10 por favor: "));
+  // Funcion o metodo Permite perdirle o preguntar informacion al usuario
+  let numeroUsuario = parseInt( prompt(`Me indicas un numero entre 1 y ${numeroMaximoPosible} por favor: `));
   // let nombre = "Luna";
   // let edad = 25;
   // let numeroDeVentas = 50;
@@ -34,7 +35,8 @@ while (numeroUsuario != numeroSecreto){
     // Acertamos fue verdadera la condición
     // alert('Acertaste el número');
     alert(`Acertaste, el número es: ${numeroUsuario}. Lo hiciste en ${intentos} ${intentos == 1 ? 'vez' : 'veces'}`);
-    // intentos = 1;
+    intentos = 1;
+    numeroSecreto = Math.floor(Math.random()*numeroMaximoPosible)+1;
     // palabraVeces ='vez';
   }else{
     // La condición no se cumplió
