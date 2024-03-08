@@ -50,34 +50,145 @@
 // Crea un contador que comience en 1 y vaya hasta 10 usando un bucle 'while'. Muestra cada número.
 
 // let contador = 1;
-while (contador <= 10) {
-console.log(contador);
-contador++;
-}
+// while (contador <= 10) {
+// console.log(contador);
+// contador++;
+// }
 
 // Crea un contador que comience en 10 y vaya hasta 0 usando un bucle 'while'. Muestra cada número.
 
 // let contador = 10;
-while (contador >= 0) {
-console.log(contador);
-contador--;
-}
+// while (contador >= 0) {
+// console.log(contador);
+// contador--;
+// }
 
 // Crea un programa de cuenta regresiva. Pide un número y cuenta desde 0 hasta ese número utilizando un bucle 'while' en la consola del navegador.
 
 // let numeroMaximo = prompt("Ingresa un número para la cuenta regresiva:");
 
-while (numeroMaximo >= 0) {
-console.log(numeroMaximo);
-numeroMaximo--;
-}
+// while (numeroMaximo >= 0) {
+// console.log(numeroMaximo);
+// numeroMaximo--;
+// }
 
 // Crea un programa de cuenta progresiva. Pide un número y cuenta desde 0 hasta ese número utilizando un bucle 'while' en la consola del navegador.
 
 // let numeroMaximo = prompt("Ingresa un número para la cuenta progresiva:");;
 // let contador = 0;
 
-while (contador <= numeroMaximo) {
-console.log(contador);
-contador++
-}
+// while (contador <= numeroMaximo) {
+// console.log(contador);
+// contador++
+// }
+
+// 1. **Mensaje de bienvenida**
+
+   ```
+   console.log('¡Bienvenido!');
+   ```
+
+// 2. **Saludo personalizado**
+
+  //  ```
+  //  nombre = 'Gui Lima';
+  //  console.log(`¡Hola, ${nombre}!`);
+  //  ```
+
+// 3. **Saludo personalizado con alerta**
+
+  //  ```
+  //  nombre = 'Gui Lima';
+  //  alert(`¡Hola, ${nombre}!`);
+  //  ```
+
+// 4. **Pregunta y respuesta utilizando prompt**
+
+   ```
+   lenguajePreferido = prompt('¿Cuál es el lenguaje de programación que más te gusta?');
+   console.log(lenguajePreferido);
+   ```
+
+// 5. **Suma de dos valores**
+
+  //  ```
+  //  valor1 = 42;
+  //  let valor2 = 8;
+  //  let resultado = valor1 + valor2;
+  //  console.log(`La suma de ${valor1} y ${valor2} es igual a ${resultado}.`);
+  //  ```
+
+// 6. **Resta de dos valores**
+
+  //  ```
+  //  valor1 = 10;
+  //  let valor2 = 8;
+  //  let resultado = valor1 - valor2;
+  //  console.log(`La diferencia entre ${valor1} y ${valor2} es igual a ${resultado}.`);
+  //  ```
+
+// 7. **Determinar si es mayor o menor de edad**
+
+   ```
+   edad = prompt('Ingresa tu edad:');
+   if (edad > 17) {
+       console.log('Eres mayor de edad.');
+   } else {
+       console.log('Eres menor de edad.');
+   }
+   ```
+
+// 8. **Verificar si un número es positivo, negativo o cero**
+
+   ```
+   numero = parseFloat(prompt("Ingresa un número:"));
+   if (numero > 0) {
+       console.log("El número es positivo.");
+   } else if (numero < 0) {
+       console.log("El número es negativo.");
+   } else {
+       console.log("El número es cero.");
+   }
+   ```
+
+// 9. **Imprimir números del 1 al 10 con un bucle while**
+
+   ```
+   numero = 1;
+   while (numero <= 10) {
+       console.log(numero);
+       numero++;
+   }
+   ```
+
+// 10. **Determinar si una nota es aprobada o reprobada**
+
+    ```
+    nota = 8; // Reemplaza con el valor de la nota que deseas probar
+    if (nota >= 7) {
+        console.log("Aprobado");
+    } else {
+        console.log("Reprobado");
+    }
+    ```
+
+// 11. **Número aleatorio con Math.random**
+
+    ```
+    numeroAleatorio = Math.random();
+    console.log(numeroAleatorio);
+    ```
+
+// 12. **Número entero aleatorio entre 1 y 10 con Math.random**
+
+    ```
+    numeroIntAleatorio = parseInt(Math.random() * 10) + 1;
+    console.log(numeroIntAleatorio);
+    ```
+
+// 13. **Número entero aleatorio entre 1 y 1000 con Math.random**
+
+    ```
+    numeroIntAleatorio = parseInt(Math.random() * 1000) + 1;
+    console.log(numeroIntAleatorio);
+    ```
