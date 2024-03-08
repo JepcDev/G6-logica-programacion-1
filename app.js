@@ -43,8 +43,12 @@ while (numeroUsuario != numeroSecreto){
       alert('El número secreto es mayor');
     }
     // Incrementamos el contador cuando no acierta.
-    palabraVeces = 'veces';
     intentos = intentos + 1;
+    palabraVeces = 'veces';
+    if (intentos >3) {
+      alert('Llegaste al número máximo de intentos');
+      break;
+    }
   }
 
   // if (edad >= 18) {
