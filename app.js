@@ -9,13 +9,25 @@
 // let parrafo = document.querySelector('p');
 // parrafo.innerHTML = 'Indica un número del 1 al 10';
 
+let numeroSecreto = generarNumeroSecreto();
+
+console.log(numeroSecreto);
+
 function asignarTextoElemento(elemento, texto){
   let elementoHTML = document.querySelector(elemento);
   elementoHTML.innerHTML = texto;
+  return;
 }
 
 function intentoDeUsuario() {
   alert('Click desde el botón');
+  return;
+}
+
+function generarNumeroSecreto(params) {
+  // let numeroSecreto = Math.floor(Math.random()*10);
+  return Math.floor(Math.random()*10);
+  // return numeroSecreto;
 }
 
 asignarTextoElemento('h1', 'Juego del número secreto!');
