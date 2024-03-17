@@ -7,49 +7,89 @@
 
 //------------ 2.Cambia el contenido de la etiqueta h1 con document.querySelector y asigna el siguiente texto: Hora del Desafío.
 
-let titulo = document.querySelector('h1');
-titulo.innerHTML = 'Hora del Desafío';
+// let titulo = document.querySelector('h1');
+// titulo.innerHTML = 'Hora del Desafío';
 
 //------------ 3.Crea una función que muestre en la consola el mensaje El botón fue clicado siempre que se presione el botón Console.
 
 // En el index.html , agregamos en el onclick el siguiente código:
 
-{/* <button onclick="mostarMensajeEnLaConsola()" class="button">Console</button> */}
+// {/* <button onclick="mostarMensajeEnLaConsola()" class="button">Console</button> */}
 
 // En el app.js
 
-function mostarMensajeEnLaConsola() {
-    console.log('El botón fue clicado!')
-}
+// function mostarMensajeEnLaConsola() {
+//     console.log('El botón fue clicado!')
+// }
 
 //--------------- 4.Crea una función que se ejecute cuando se haga clic en el botón "prompt", preguntando el nombre de una ciudad de Brasil. Luego, muestra una alerta con el mensaje concatenando la respuesta con el texto: "Estuve en {ciudad} y me acordé de ti".
 
 // En el index.html , agregamos en el onclick el siguiente código:
-{/* <button onclick="mostrarAlerta()" class="button">Alert</button> */}
+// {/* <button onclick="mostrarAlerta()" class="button">Alert</button> */}
 
 // En el app.js
-function mostrarAlerta() {
-    let ciudad = prompt("Por favor, ingresa el nombre de una ciudad de Brasil:");
-    alert("Estuve en " + ciudad + " y me acordé de ti.");
-}
+// function mostrarAlerta() {
+//     let ciudad = prompt("Por favor, ingresa el nombre de una ciudad de Brasil:");
+//     alert("Estuve en " + ciudad + " y me acordé de ti.");
+// }
 //-------------- 5.Crea una función que muestre una alerta con el mensaje: "Amo JS" siempre que se presione el botón "Alerta".
 
 // En el index.html , agregamos en el onclick el siguiente código:
-{/* <button onclick="mostarAlerta()" class="button">Alert</button> */}
+// {/* <button onclick="mostarAlerta()" class="button">Alert</button> */}
 
 // En el app.js
-function mostarAlerta(){
-    alert("AMO JS");
-}
+// function mostarAlerta(){
+//     alert("AMO JS");
+// }
 //-------------- 6.Al hacer clic en el botón "suma", pide 2 números y muestra el resultado de la suma en una alerta.
 
 // En el index.html , agregamos en el onclick el siguiente código:
-{/* <button onclick="sumaDosNumeros()" class="button">Suma</button> */}
+// {/* <button onclick="sumaDosNumeros()" class="button">Suma</button> */}
 
 // En el app.js
-function sumaDosNumeros(){
-    let primerNumero = parseInt(prompt('Digite el primer numero'));
-    let segunNumero = parseInt(prompt('Digite el segundo numero'));
-    let resultado = primerNumero + segunNumero;
-    alert('${primerNumero} + ${segunNumero} = ${resultado}');
-}
+// function sumaDosNumeros(){
+//     let primerNumero = parseInt(prompt('Digite el primer numero'));
+//     let segunNumero = parseInt(prompt('Digite el segundo numero'));
+//     let resultado = primerNumero + segunNumero;
+//     alert('${primerNumero} + ${segunNumero} = ${resultado}');
+// }
+
+// Crear una función que muestra "¡Hola, mundo!" en la consola.
+// function mostrarHola() {
+//   console.log("¡Hola, mundo!");
+// }
+// mostrarHola();
+
+// Crear una función que recibe un nombre como parámetro y muestra "¡Hola, [nombre]!" en la consola.
+// function mostrarHolaNombre(nombre) {
+//   console.log(`¡Hola, ${nombre}!`);
+// }
+// mostrarHolaNombre("Alice");
+
+// Crear una función que recibe un número como parámetro y devuelve el doble de ese número.
+// function calcularDoble(numero) {
+//   return numero * 2;
+// }
+// let resultadoDoble = calcularDoble(5);
+// console.log(resultadoDoble);
+
+// Crear una función que recibe tres números como parámetros y devuelve su promedio.
+// function calcularPromedio(a, b, c) {
+  // return (a + b + c) / 3;
+// }
+// let promedio = calcularPromedio(4, 7, 10);
+// console.log(promedio);
+
+// Crear una función que recibe dos números como parámetros y devuelve el mayor de ellos.
+// function encontrarMayor(a, b) {
+  // return a > b ? a : b;
+// }
+// let numeroMayor = encontrarMayor(15, 9);
+// console.log(numeroMayor);
+
+// Crear una función que recibe un número como parámetro y devuelve el resultado de multiplicar ese número por sí mismo.
+// function cuadrado(numero) {
+//   return numero * numero;
+// }
+// let resultado = cuadrado(2);
+// console.log(resultado);
