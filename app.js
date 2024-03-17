@@ -11,20 +11,24 @@
 
 let numeroSecreto = generarNumeroSecreto();
 
-console.log(numeroSecreto);
-
 function asignarTextoElemento(elemento, texto){
   let elementoHTML = document.querySelector(elemento);
   elementoHTML.innerHTML = texto;
   return;
 }
 
-function intentoDeUsuario() {
-  alert('Click desde el botón');
+function verificarIntento() {
+  // alert('Click desde el botón');
+  let numeroDeUsuario = parseInt(document.getElementById('valorUsuario').value);
+  console.log(typeof(numeroDeUsuario));
+  console.log(numeroSecreto);
+  console.log(typeof(numeroSecreto));
+  console.log(numeroDeUsuario);
+  console.log(numeroDeUsuario === numeroSecreto);
   return;
 }
 
-function generarNumeroSecreto(params) {
+function generarNumeroSecreto() {
   // let numeroSecreto = Math.floor(Math.random()*10);
   return Math.floor(Math.random()*10);
   // return numeroSecreto;
