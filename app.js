@@ -9,21 +9,25 @@
 // let parrafo = document.querySelector('p');
 // parrafo.innerHTML = 'Indica un número del 1 al 10';
 
-let numeroSecreto = generarNumeroSecreto();
-let intentos = 1;
+let numeroSecreto = 0;
+let intentos = 0;
 // console.log(numeroSecreto);
 
 function asignarTextoElemento(elemento, texto){
+    // obtiene el objeto del DOM html del elemento con el selector que le enviamos por parametro
   let elementoHTML = document.querySelector(elemento);
+  // inserta en el DOM html en el elemento que obtuvimos el texto que nos enviaron por parametro
   elementoHTML.innerHTML = texto;
   return;
 }
 
 function verificarIntento() {
   // alert('Click desde el botón');
+  // obtieene el valor del DOM html del elemento con el id=valorUsuario
   let numeroDeUsuario = parseInt(document.getElementById('valorUsuario').value);
   if (numeroDeUsuario === numeroSecreto) {
     asignarTextoElemento('p', `Felicidades acertaste el número en ${intentos} ${(intentos === 1) ? 'vez' : 'veces'}`);
+    // obtieene el valor del DOM html del elemento con el id=reiniciar y remueve el atributo "disabled"
     document.getElementById('reiniciar').removeAttribute('disabled');
   } else {
     // EL usuario acertó.
@@ -39,6 +43,7 @@ function verificarIntento() {
 }
 
 function limpiarCaja() {
+  // obtenemos el valor del elemento en el DOM html con el selectro id-#valorUsuario y lo reemplazamos con ''
   document.querySelector('#valorUsuario').value = '';
   // valorCaja.value = '';
 }
@@ -48,6 +53,22 @@ function generarNumeroSecreto() {
   return Math.floor(Math.random()*10);
   // return numeroSecreto;
 }
+function condicionesIniciales() {
+  asignarTextoElemento('h1', 'Juego del número secreto!');
+  asignarTextoElemento('p', 'Indica un número del 1 al 10 por favor');
+  numeroSecreto = generarNumeroSecreto();
+  intentos = 1;
+}
 
-asignarTextoElemento('h1', 'Juego del número secreto!');
-asignarTextoElemento('p', 'Indica un número del 1 al 10 por favor');
+function reiniciarJuego(params) {
+  // Limpiar la caja
+  limpiarCaja();
+  // Indicar mensaje de intervalos de números
+  // Generar el número aleatorio
+  // Inicializar el número de intentos
+  condicionesIniciales();
+  // Deshabilitar el botón de nuevo juego
+  document.querySelector('#reiniciar').setAttribute('disabled', 'true');
+}
+
+condicionesIniciales();
