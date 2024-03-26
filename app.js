@@ -13,6 +13,7 @@ let numeroSecreto = 0;
 let intentos = 0;
 // lista de numeros que ya fueron sorteados,utilizados en el juego
 let listaNumerosSorteados = [];
+let numeroMaximo = 10;
 
 // console.log(numeroSecreto);
 
@@ -51,32 +52,39 @@ function limpiarCaja() {
   // valorCaja.value = '';
 }
 
+//* generarNumeroSecreto()
 function generarNumeroSecreto() {
   // let numeroSecreto = Math.floor(Math.random()*10);
-  let numeroGenerado = Math.floor(Math.random()*10)+1;
+  let numeroGenerado = Math.floor(Math.random()*numeroMaximo)+1;
 
   console.log(numeroGenerado);
   console.log(listaNumerosSorteados);
-
-  // si el numero generado está incluido en la lista
-  // include metodo que verifica en un array si ya existe el objeto o dato que se le envia por parametro
-  if (listaNumerosSorteados.includes(numeroGenerado)){
-    return generarNumeroSecreto();
-  }else{
-    listaNumerosSorteados.push(numeroGenerado);
-    return numeroGenerado;
+  // si ya sorteamos todos los números
+  if (listaNumerosSorteados.length == numeroMaximo) {
+    asignarTextoElemento('p', 'Ya se sortearon todos los números posibles');
+  } else {
+    // si el numero generado está incluido en la lista
+    // include metodo que verifica en un array si ya existe el objeto o dato que se le envia por parametro
+    if (listaNumerosSorteados.includes(numeroGenerado)){
+      return generarNumeroSecreto();
+    }else{
+      listaNumerosSorteados.push(numeroGenerado);
+      return numeroGenerado;
+    }
   }
 }
 
+//* condicionesIniciales()
 // funcion que lanza las condiciones inicales del juego
 function condicionesIniciales() {
   asignarTextoElemento('h1', 'Juego del número secreto!');
-  asignarTextoElemento('p', 'Indica un número del 1 al 10 por favor');
+  asignarTextoElemento('p', `Indica un número del 1 al ${numeroMaximo} por favor`);
   numeroSecreto = generarNumeroSecreto();
   intentos = 1;
 }
 
-function reiniciarJuego(params) {
+//* reiniciarJuego()
+function reiniciarJuego() {
   // Limpiar la caja
   limpiarCaja();
   // Indicar mensaje de intervalos de números
